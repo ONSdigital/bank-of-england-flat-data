@@ -1,13 +1,11 @@
 name: Flat
 on:
   schedule:
-    - cron: 31 9 * * 1-5
+    - cron: 01 12 * * 1-5
   workflow_dispatch: 
   push:
     paths:
       - .github/workflows/flat.yml
-      - ./postprocess.ts
-      - ./postprocess.py
 jobs:
   scheduled:
     runs-on: ubuntu-latest
@@ -23,4 +21,4 @@ jobs:
         with:
           http_url: https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshowcolumns.asp?csv.x=yes&Datefrom=01/Sep/2017&Dateto=now&SeriesCodes=IUMZICQ,IUMBV34,IUMZICR,IUMB482,IUM2WTL&CSVF=CN&UsingCodes=Y&VPD=N&VFD=N 
           downloaded_filename: boe.csv
-          postprocess: ./postprocess.ts
+          
