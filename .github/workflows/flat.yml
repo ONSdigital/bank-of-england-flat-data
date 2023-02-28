@@ -19,6 +19,6 @@ jobs:
       - name: Fetch data
         uses: githubocto/flat@v3
         with:
-          http_url: https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshowcolumns.asp?csv.x=yes&Datefrom=01/Sep/2017&Dateto=now&SeriesCodes=IUM5WTL,IUMZO28,IUMBV42,IUMZO27&CSVF=CN&UsingCodes=Y&VPD=N&VFD=N 
+          http_url: https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshowcolumns.asp?csv.x=yes&Datefrom=01/Sep/2017&Dateto=now&SeriesCodes=IUMZICQ,IUMBV34,IUMZICR,IUMB482,IUM2WTL,IUM5WTL,IUMZO28,IUMBV42,IUMZO27&CSVF=CN&UsingCodes=Y&VPD=N&VFD=N 
           downloaded_filename: boe.csv
           
