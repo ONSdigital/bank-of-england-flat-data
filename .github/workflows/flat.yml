@@ -1,7 +1,7 @@
 name: Flat
 on:
   schedule:
-    - cron: 01 12 1 * *
+    - cron: 1 12 * * 1-5
   workflow_dispatch: 
   push:
     paths:
