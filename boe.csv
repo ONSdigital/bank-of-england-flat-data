@@ -1,288 +1,768 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <title>Error</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="assets/css/layout.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/print.css" media="print">
-    <script>
-        var el = document.getElementsByTagName('html')[0];
-        if(el.classList){el.classList.remove('no-js')}else{el.className = el.className.replace('no-js', '')}
-    </script>
-    <script src="assets/js/jquery-3.2.1.min.js"></script>
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" href="/assets/css/ie.css">
-<![endif]-->
-    <!--[if (lt IE 9) & (!IEMobile)]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-<![endif]-->
-
-	<!-- Google Tag Manager -->
-	<script>
-
-		var CheckCookies = {
-			getCookie: function (cname) {
-				var name = cname + "=";
-				var decodedCookie = decodeURIComponent(document.cookie);
-				var ca = decodedCookie.split(';');
-				for (var i = 0; i < ca.length; i++) {
-					var c = ca[i];
-					while (c.charAt(0) === ' ') {
-						c = c.substring(1);
-					}
-					if (c.indexOf(name) === 0) {
-						return c.substring(name.length, c.length);
-					}
-				}
-				return "";
-			}
-		};
-		var SetAnalytics = {
-			setTagManager: function () {
-
-				var hasConsentAnalytics = CheckCookies.getCookie('boeconsent');
-
-				if (hasConsentAnalytics === "analytics") {
-					(function (w, d, s, l, i) {
-						w[l] = w[l] || []; w[l].push({
-							'gtm.start':
-								new Date().getTime(), event: 'gtm.js'
-						}); var f = d.getElementsByTagName(s)[0],
-							j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-								'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-					})(window, document, 'script', 'dataLayer', 'GTM-TH2H9ZC');
-				}
-			},
-		}
-		SetAnalytics.setTagManager();
-	</script>
-	<!-- End Google Tag Manager -->
-
-    
-<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch","rua.ceh":"false","rua.ueh":"false","rua.ieh.st":"0"}]);</script>
-                              <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="9R3WH-S6EDC-8JGQW-55286-CGTTF",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"9R3WH-S6EDC-8JGQW-55286-CGTTF",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="cqyq7evydza56z5f7zgq-f-5e99d5a34-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"39","ak.cp":"1078495","ak.ai":parseInt("286733",10),"ak.ol":"0","ak.cr":5,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"6378845f","ak.r":41485,"ak.a2":e,"ak.m":"a","ak.n":"essl","ak.bpcip":"20.49.15.0","ak.cport":7313,"ak.gh":"23.220.107.133","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1738931789","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==Yu0tJqa9Q2hUUpfzcPBson2QZhiIaB/KniI1J5OxkWWFTwWbdTgwiwQFWHmlQdWIOqMKfdy+RuAsj/17x1laVMlc4Q4NBrV0ViXp6ebXlIi3X14KRLvZ3TbGNa19l5bH8ZNYFCiLB8S0tTJQYlq5I3leuFMz5n296ep6ij0rVwyrpn7BaKNwZt65M3jgRcy5Pw8PZfNM1hU2uhxkeKxmZLJ6TqaRyRZwi91IqpfkvfumxkBqkVSDyR8S6rwYOkwqo+jJuVkgUBMY2Pr8r2/2R7nqLXVpr9XXwm9d9ANcviCyuO8it0dGwmFsq0wnu+UXFxUFyi2Be8Gl0UWWqrCq2R+wSxqAKPPEtqc/X1ETcF289EIneL8wxRZ1xNOrTydCZgNvgUp2vHa8IzrmV8J0DppZTTOFGa+bTJi5mAtKJis=","ak.pv":"300","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
-    <body>
-
-    <div class="wrap" itemscope itemtype="http://schema.org/WebPage">
-		<div class="nav-bypass">
-			<a href="#content-start" class="nav-bypass__link">Skip to main content</a>
-		</div>
-<header class="global-header" itemscope itemtype="http://schema.org/WPHeader">
-  <div class="header-brand" itemscope itemtype="http://schema.org/Organisation"> <a href="default.asp" class="header-logo" itemscope itemtype="http://schema.org/Brand"> <img src="assets/img/logo.svg" alt="Bank of England | Database" width="330" > Bank of England | Database </a> </div>
-  <a href="#menu" class="btn-menu"><i class="icon-menu"></i> <i class="icon-cancel"></i></a> <a href="#search" class="btn-search"><i class="icon-cancel"></i></a>
-  <div class="header-nav" id="#menu">
-    <nav class="nav-main" itemscope itemtype="http://schema.org/SiteNavigationElement">
-      <ul class="nav-main-menu">
-        <li class="nav-main-item nav-browse-menu-item"> <a href="CategoryIndex.asp?Travel=NIxAZx&CategId=allcats&CategName=Combined A to Z" class="nav-main-link nav-browse-menu-link"><span style="text-transform:none">Browse data<i class="icon-up-dir"></i><i class="icon-down-dir"></i></span></a>
-          <ul class="nav-browse-menu">
-            <li class="nav-browse-item"><a href="BankStats.asp?Travel=NIx" class="nav-browse-link">Topics</a></li>
-            <li class="nav-browse-item"><a href="/statistics/Tables" title="Table references (main website)" target="_blank" class="nav-browse-link">Tables</a></li>
-            <li class="nav-browse-item"><a href="CategoryIndex.asp?Travel=NIxAZx&CategId=9&CategName=COUNTRY" class="nav-browse-link">Countries</a></li>
-            <li class="nav-browse-item"><a href="CategoryIndex.asp?Travel=NIxAZx&CategId=6&CategName=INSTRUMENTS" class="nav-browse-link">Financial categories</a></li>
-             <li class="nav-browse-item"><a href="CategoryIndex.asp?Travel=NIxAZx&CategId=sectorcats&CategName=SECTOR" class="nav-browse-link">Economic/industrial sectors</a></li>
-             <li class="nav-browse-item"><a href="CategoryIndex.asp?Travel=NIxAZx&CategId=allcats&CategName=Combined A to Z" class="nav-browse-link">A-Z</a></li>
-            
-           
-          </ul>
-        </li>
-        <li class="nav-main-item nav-has-children"> <a href="index.asp?Travel=NIxIRx&levels=3&XNotes=Y&A3951XNode3951.x=10&A3951XNode3951.y=12&Nodes=&SectionRequired=I&HideNums=-1&ExtraInfo=true#BM" class="nav-main-link"><span>Exchange rates<i class="icon-up-dir"></i><i class="icon-down-dir"></i></span></a>
-          <ul class="nav-sub-menu">
-            <li class="nav-sub-item"><a href="Rates.asp?Travel=NIxAZx&into=GBP" class="nav-sub-link"><abbr title="British pound sterling">GBP</abbr> daily  rates</a></li>
-            <li class="nav-sub-item"><a href="Rates.asp?Travel=NIxAZx&into=EUR" class="nav-sub-link"><abbr title="Euro">EUR</abbr> daily rates</a></li>
-            
-            <li class="nav-sub-item"><a href="Rates.asp?Travel=NIxAZx&into=USD" class="nav-sub-link"><abbr title="US Dollars">USD</abbr> daily rates</a></li>
-            <li class="nav-sub-item"><a href="index.asp?first=yes&SectionRequired=I&HideNums=-1&ExtraInfo=true&Travel=NIx" class="nav-sub-link">View all</a></li>
-          </ul>
-        </li>
-        <li class="nav-main-item"><a href="Help.asp?Travel=NIxASx&Back=AdvSearch.asp" class="nav-main-link"><span>Help</span></a></li>
-        <li class="nav-main-item item-mainsite-link"><a href="https://www.bankofengland.co.uk" class="nav-main-link"><span>Bank of England website</span></a></li>
-      </ul>
-    </nav>
-    <div class="search-widget" id="search">
-      <form method="get" action="FromShowColumns.asp">
-        <fieldset class="search-widget-fields" >
-		<legend class="visually-hidden">Search the database</legend>
-          <label for="gsc-i-id1" class="visually-hidden">Search</label>
-          <input type="hidden" name="Travel" value="" />
-          <input name="searchText" type="search" id="gsc-i-id1" placeholder="Search our data..." title="search" autoComplete="off" size=10 class="search-widget-field" />
-          <button type="submit" class="search-widget-btn">Search</button>
-
-        </fieldset>
-      </form>
-    </div>
-  </div>
-</header>
-<span id="content-start"></span>
-<div class="page-content">
-    <section class="page-section">
-          <div class="container">
-            <div class="col12">
-
-						<h2>Error</h2>
-						<div id="editorial">
-							<p class="error">
-							The Statistical Interactive Database is currently unavailable.  It will be brought back online as soon as possible.
-						  </p>
-
-							<p>If you have a problem or question relating to the <em>database</em>, please contact the <a href="mailto:dsd_editor@bankofengland.co.uk">DSD Editor</a>.
-							
-							</p>
-			  </div>
-
-				<div class="clear"></div>
-
-
-
-
-            </div>
-
-          </div>
-        </section>
-</div>
-      
-<footer class="global-footer" itemscope itemtype="http://schema.org/WPFooter">
-    <div class="container">
-      <div class="col3 s-full">
-        <div class="footer-brand">
-          <p><a href="https://www.bankofengland.co.uk/" target="_blank" class="footer-logo"><img src="assets/img/BOE_Logo_white.svg" alt="Bank of England"  height="50"> Bank of England</a></p>
-        </div>
-        <div class="footer-social-bank">
-          <h3>Follow us</h3>
-          <ul class=social-links>
-            <li class="social-item"><a class="social-link" href="https://twitter.com/bankofengland" target="_blank"><i class="icon-twitter-bird"></i> <span class="si-text">Follow us on Twitter</span></a></li>
-            <li class="social-item"><a class="social-link" href="https://www.linkedin.com/company/bank-of-england/" target="_blank"><i class="icon-linkedin"></i> <span class="si-text">Connect with us on LinkedIn</span></a></li>
-            <li class="social-item"><a class="social-link" href="https://www.youtube.com/user/bankofenglanduk" target="_blank"><i class="icon-youtube-play"></i> <span class="si-text">Watch us on Youtube</span></a></li>
-            <li class="social-item"><a class="social-link" href="https://www.flickr.com/photos/bankofengland/albums" target="_blank"><i class="icon-flickr"></i> <span class="si-text">Find us on Flickr</span></a></li>
-            <li class="social-item"><a class="social-link" href="https://www.facebook.com/bankofengland.co.uk" target="_blank"><i class="icon-facebook"></i> <span class="si-text">Add us on Facebook</span></a></li>
-          </ul>
-        </div>
-        <div class="footer-social-museum">
-          <h3>Museum</h3>
-          <ul class="social-links">
-            <li class="social-item"><a class="social-link" href="https://twitter.com/boemuseum" target="_blank"><i class="icon-twitter-bird">Follow us on Twitter</i></a></li>
-            <li class="social-item"><a class="social-link" href="https://www.facebook.com/boemuseum" target="_blank"><i class="icon-facebook">Add us on Facebook</i></a></li>
-            <li class="social-item"><a class="social-link" href="https://www.instagram.com/boemuseum/" target="_blank"><i class="icon-instagram">Follow us on Instagram</i></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col3 s-half">
-                    <div class="footer-topics">
-                      <h3>Useful links</h3>
-                        <ul class="footer-links">
-                            <li class="footer-item"><a class="footer-link" href="advsearch.asp?Travel=NIx">Advanced search</a></li>
-                            <li class="footer-item"><a href="index.asp?SectionRequired=I&first=yes&HideNums=-1&ExtraInfo=true&Travel=NIxIRx&levels=3" class="footer-link" >Interest and exchange rates data</a></li>
-                            <li class="footer-item"><a class="footer-link" href="help.asp?Back=Y&Highlight=Subscribe#Subscribe">Subscribe to XML download changes</a></li>
-                            <li class="footer-item"><a class="footer-link" href="Bank-Rate.asp">Official Bank Rate history</a></li>
-                            <li class="footer-item"><a class="footer-link" href="https://www.bankofengland.co.uk/-/media/BoE/Files/statistics/discontinued-series" target="_blank">Discontinued series</a></li>
-                            <li class="footer-item"><a class="footer-link" href="https://www.bankofengland.co.uk/statistics/details" target="_blank">Notes about our data</a></li>
-                            <li class="footer-item"><a class="footer-link" href="https://www.bankofengland.co.uk/statistics/tables" target="_blank">Bankstats tables</a></li>
-                            <li class="footer-item"><a class="footer-link" href="https://www.bankofengland.co.uk/statistics" target="_blank">Bank of England Statistics</a></li>
-                        </ul>
-                    </div>
-                </div>
-      <div class="m-clear"></div>
-
-      <div class="col3 s-full">
-        <div class="footer-contact">
-          <h3>Visiting the bank</h3>
-          <ul class="footer-contact-info">
-            <li class="footer-address">Threadneedle Street, London, EC2R 8AH</li>
-            <li class="footer-tel">Switchboard: <a class="footer-tel-link" href="tel:+442034614444">+44(0)20 3461 4444</a></li>
-            <li class="footer-tel">Enquiries: <a class="footer-tel-link" href="tel:+442034614878">+44(0)20 3461 4878</a></li>
-          </ul>
-          <h3>Visiting the museum</h3>
-          <ul class="footer-contact-info">
-            <li class="footer-address">Bartholomew Lane, London, EC2R 8AH</li>
-          </ul>
-        </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        <div class="col12">
-          <p class="text-copyright">&copy; 2025 Bank of England </p>
-          <ul class="list-inline">
-            <li class="list-inline__item"><a href="https://www.bankofengland.co.uk/accessibility" target="_blank">Accessibility statement</a></li>
-            <li class="list-inline__item"><a href="https://www.bankofengland.co.uk/legal/privacy-and-cookie-policy" target="_blank">Cookies</a></li>
-            <li class="list-inline__item"><a href="https://www.bankofengland.co.uk/legal" target="_blank">Legal</a></li>
-            <li class="list-inline__item"><a href="https://www.bankofengland.co.uk/legal/privacy" target="_blank">Privacy</a></li>
-          </ul>
-        </div>
-        <div class="clear"></div>
-      </div>
-    </div>
-  </footer>
-
- 		<div class="cookie-notice">
-			<div class="cookie-notice__panel">
-				<div class="cookie-content content-block">
-					<h2 class="cookie-title exclude-navigation">Our use of cookies</h2>
-
-					<p>We use necessary cookies to make our site work (for example, to manage your session). We&rsquo;d also like to use some non-essential cookies (including third-party cookies) to help us improve the site. By clicking &lsquo;Accept recommended settings&rsquo; on this banner, you accept our use of optional cookies.</p>
-
-					<style>
-						.cookie__button {
-							max-width: 225px;
-						}
-					</style>
-
-					<table class="cookie-notice__table">
-						<tr>
-							<th>Necessary cookies</th>
-							<th>Analytics cookies</th>
-							<td class="table-header">&nbsp;</td>
-						</tr>
-						<tr>
-							<td>Yes</td>
-							<td>Yes</td>
-							<td>
-								<button class="cookie__button btn btn-default" data-cookie="analytics">Accept recommended cookies</button>
-							</td>
-						</tr>
-						<tr>
-							<td>Yes</td>
-							<td>No</td>
-							<td><button class="cookie__button btn btn-default btn-neutral" data-cookie="necessary">Proceed with necessary cookies only</button></td>
-						</tr>
-					</table>
-
-					<h3>Necessary cookies</h3>
-					<p>Necessary cookies enable core functionality on our website such as security, network management, and accessibility. You may disable these by changing your browser settings, but this may affect how the website functions. </p>
-					<h3>Analytics cookies</h3>
-					<p>We use analytics cookies so we can keep track of the number of visitors to various parts of the site and understand how our website is used. For more information on how these cookies work please see our <a href="https://www.bankofengland.co.uk/legal/privacy-and-cookie-policy" target="_blank">Cookie policy</a>.</p>
-				</div>
-			</div>
-		</div> 
-  
-    <script src="assets/js/min/slick.min.js"></script> 
-  <script src="assets/js/min/scripts.js"></script> 
-  <script type="application/ld+json">
-        {
-            "@context" : "http://schema.org",
-            "@type" : "Organization",
-            "name" : "Bank of England",
-            "url" : "https://www.bankofengland.co.uk",
-            "logo" : "https://www.bankofengland.co.uk/img/bankofengland-logo.png",
-            "sameAs" : [
-            ],
-            "contactPoint" : [
-            {
-                "@type" : "ContactPoint",
-                "telephone" : "+44(0)0000000",
-                "contactType" : "customer service"
-            }
-            ]
-        }
-        </script> 
-  
-
-    </div>
-</body>
-</html>
+DATE,SERIES,VALUE
+30 Sep 2017,IUMZICQ,1.23
+31 Oct 2017,IUMZICQ,1.44
+30 Nov 2017,IUMZICQ,1.45
+31 Dec 2017,IUMZICQ,1.41
+31 Jan 2018,IUMZICQ,1.42
+28 Feb 2018,IUMZICQ,1.45
+31 Mar 2018,IUMZICQ,1.52
+30 Apr 2018,IUMZICQ,1.73
+31 May 2018,IUMZICQ,1.69
+30 Jun 2018,IUMZICQ,1.68
+31 Jul 2018,IUMZICQ,1.73
+31 Aug 2018,IUMZICQ,1.7
+30 Sep 2018,IUMZICQ,1.65
+31 Oct 2018,IUMZICQ,1.64
+30 Nov 2018,IUMZICQ,1.67
+31 Dec 2018,IUMZICQ,1.61
+31 Jan 2019,IUMZICQ,1.65
+28 Feb 2019,IUMZICQ,1.61
+31 Mar 2019,IUMZICQ,1.59
+30 Apr 2019,IUMZICQ,1.6
+31 May 2019,IUMZICQ,1.56
+30 Jun 2019,IUMZICQ,1.56
+31 Jul 2019,IUMZICQ,1.49
+31 Aug 2019,IUMZICQ,1.44
+30 Sep 2019,IUMZICQ,1.38
+31 Oct 2019,IUMZICQ,1.31
+30 Nov 2019,IUMZICQ,1.29
+31 Dec 2019,IUMZICQ,1.3
+31 Jan 2020,IUMZICQ,1.3
+29 Feb 2020,IUMZICQ,1.3
+31 Mar 2020,IUMZICQ,1.31
+30 Apr 2020,IUMZICQ,1.32
+31 May 2020,IUMZICQ,1.32
+30 Jun 2020,IUMZICQ,1.3
+31 Jul 2020,IUMZICQ,1.32
+31 Aug 2020,IUMZICQ,1.41
+30 Sep 2020,IUMZICQ,1.46
+31 Oct 2020,IUMZICQ,1.49
+30 Nov 2020,IUMZICQ,1.4
+31 Dec 2020,IUMZICQ,1.35
+31 Jan 2021,IUMZICQ,1.33
+28 Feb 2021,IUMZICQ,1.3
+31 Mar 2021,IUMZICQ,1.29
+30 Apr 2021,IUMZICQ,1.24
+31 May 2021,IUMZICQ,1.21
+30 Jun 2021,IUMZICQ,1.17
+31 Jul 2021,IUMZICQ,1.16
+31 Aug 2021,IUMZICQ,1.1
+30 Sep 2021,IUMZICQ,1.13
+31 Oct 2021,IUMZICQ,1.13
+30 Nov 2021,IUMZICQ,1.35
+31 Dec 2021,IUMZICQ,1.39
+31 Jan 2022,IUMZICQ,1.42
+28 Feb 2022,IUMZICQ,1.65
+31 Mar 2022,IUMZICQ,2.01
+30 Apr 2022,IUMZICQ,2.25
+31 May 2022,IUMZICQ,2.55
+30 Jun 2022,IUMZICQ,2.87
+31 Jul 2022,IUMZICQ,3.43
+31 Aug 2022,IUMZICQ,3.51
+30 Sep 2022,IUMZICQ,4.21
+31 Oct 2022,IUMZICQ,5.94
+30 Nov 2022,IUMZICQ,5.82
+31 Dec 2022,IUMZICQ,5.33
+31 Jan 2023,IUMZICQ,5.01
+28 Feb 2023,IUMZICQ,4.71
+31 Mar 2023,IUMZICQ,4.57
+30 Apr 2023,IUMZICQ,4.53
+31 May 2023,IUMZICQ,4.69
+30 Jun 2023,IUMZICQ,5.47
+31 Jul 2023,IUMZICQ,6.22
+31 Aug 2023,IUMZICQ,6.21
+30 Sep 2023,IUMZICQ,5.93
+31 Oct 2023,IUMZICQ,5.52
+30 Nov 2023,IUMZICQ,5.13
+31 Dec 2023,IUMZICQ,4.89
+31 Jan 2024,IUMZICQ,4.62
+29 Feb 2024,IUMZICQ,4.62
+31 Mar 2024,IUMZICQ,4.8
+30 Apr 2024,IUMZICQ,4.86
+31 May 2024,IUMZICQ,5.01
+30 Jun 2024,IUMZICQ,5
+31 Jul 2024,IUMZICQ,4.8
+31 Aug 2024,IUMZICQ,4.55
+30 Sep 2024,IUMZICQ,4.37
+31 Oct 2024,IUMZICQ,4.21
+30 Nov 2024,IUMZICQ,4.39
+31 Dec 2024,IUMZICQ,4.47
+31 Jan 2025,IUMZICQ,4.49
+30 Sep 2017,IUMBV34,1.4
+31 Oct 2017,IUMBV34,1.55
+30 Nov 2017,IUMBV34,1.61
+31 Dec 2017,IUMBV34,1.57
+31 Jan 2018,IUMBV34,1.54
+28 Feb 2018,IUMBV34,1.49
+31 Mar 2018,IUMBV34,1.53
+30 Apr 2018,IUMBV34,1.72
+31 May 2018,IUMBV34,1.74
+30 Jun 2018,IUMBV34,1.74
+31 Jul 2018,IUMBV34,1.75
+31 Aug 2018,IUMBV34,1.75
+30 Sep 2018,IUMBV34,1.71
+31 Oct 2018,IUMBV34,1.8
+30 Nov 2018,IUMBV34,1.75
+31 Dec 2018,IUMBV34,1.73
+31 Jan 2019,IUMBV34,1.72
+28 Feb 2019,IUMBV34,1.7
+31 Mar 2019,IUMBV34,1.7
+30 Apr 2019,IUMBV34,1.66
+31 May 2019,IUMBV34,1.65
+30 Jun 2019,IUMBV34,1.64
+31 Jul 2019,IUMBV34,1.61
+31 Aug 2019,IUMBV34,1.59
+30 Sep 2019,IUMBV34,1.55
+31 Oct 2019,IUMBV34,1.47
+30 Nov 2019,IUMBV34,1.41
+31 Dec 2019,IUMBV34,1.42
+31 Jan 2020,IUMBV34,1.41
+29 Feb 2020,IUMBV34,1.4
+31 Mar 2020,IUMBV34,1.4
+30 Apr 2020,IUMBV34,1.38
+31 May 2020,IUMBV34,1.42
+30 Jun 2020,IUMBV34,1.41
+31 Jul 2020,IUMBV34,1.45
+31 Aug 2020,IUMBV34,1.6
+30 Sep 2020,IUMBV34,1.75
+31 Oct 2020,IUMBV34,1.94
+30 Nov 2020,IUMBV34,1.92
+31 Dec 2020,IUMBV34,1.86
+31 Jan 2021,IUMBV34,1.75
+28 Feb 2021,IUMBV34,1.61
+31 Mar 2021,IUMBV34,1.56
+30 Apr 2021,IUMBV34,1.49
+31 May 2021,IUMBV34,1.47
+30 Jun 2021,IUMBV34,1.39
+31 Jul 2021,IUMBV34,1.29
+31 Aug 2021,IUMBV34,1.23
+30 Sep 2021,IUMBV34,1.2
+31 Oct 2021,IUMBV34,1.29
+30 Nov 2021,IUMBV34,1.53
+31 Dec 2021,IUMBV34,1.57
+31 Jan 2022,IUMBV34,1.64
+28 Feb 2022,IUMBV34,1.78
+31 Mar 2022,IUMBV34,2.14
+30 Apr 2022,IUMBV34,2.35
+31 May 2022,IUMBV34,2.63
+30 Jun 2022,IUMBV34,2.87
+31 Jul 2022,IUMBV34,3.48
+31 Aug 2022,IUMBV34,3.6
+30 Sep 2022,IUMBV34,4.17
+31 Oct 2022,IUMBV34,5.99
+30 Nov 2022,IUMBV34,5.98
+31 Dec 2022,IUMBV34,5.43
+31 Jan 2023,IUMBV34,5.14
+28 Feb 2023,IUMBV34,4.79
+31 Mar 2023,IUMBV34,4.74
+30 Apr 2023,IUMBV34,4.6
+31 May 2023,IUMBV34,4.72
+30 Jun 2023,IUMBV34,5.49
+31 Jul 2023,IUMBV34,6.22
+31 Aug 2023,IUMBV34,6.18
+30 Sep 2023,IUMBV34,5.91
+31 Oct 2023,IUMBV34,5.6
+30 Nov 2023,IUMBV34,5.28
+31 Dec 2023,IUMBV34,5.03
+31 Jan 2024,IUMBV34,4.71
+29 Feb 2024,IUMBV34,4.76
+31 Mar 2024,IUMBV34,4.96
+30 Apr 2024,IUMBV34,4.98
+31 May 2024,IUMBV34,5.19
+30 Jun 2024,IUMBV34,5.16
+31 Jul 2024,IUMBV34,4.99
+31 Aug 2024,IUMBV34,4.8
+30 Sep 2024,IUMBV34,4.58
+31 Oct 2024,IUMBV34,4.41
+30 Nov 2024,IUMBV34,4.53
+31 Dec 2024,IUMBV34,4.6
+31 Jan 2025,IUMBV34,4.65
+30 Sep 2017,IUMZICR,1.57
+31 Oct 2017,IUMZICR,1.66
+30 Nov 2017,IUMZICR,1.68
+31 Dec 2017,IUMZICR,1.69
+31 Jan 2018,IUMZICR,1.64
+28 Feb 2018,IUMZICR,1.71
+31 Mar 2018,IUMZICR,1.76
+30 Apr 2018,IUMZICR,1.85
+31 May 2018,IUMZICR,2.06
+30 Jun 2018,IUMZICR,2.08
+31 Jul 2018,IUMZICR,1.99
+31 Aug 2018,IUMZICR,1.97
+30 Sep 2018,IUMZICR,1.93
+31 Oct 2018,IUMZICR,1.93
+30 Nov 2018,IUMZICR,1.88
+31 Dec 2018,IUMZICR,1.84
+31 Jan 2019,IUMZICR,1.86
+28 Feb 2019,IUMZICR,1.85
+31 Mar 2019,IUMZICR,1.85
+30 Apr 2019,IUMZICR,1.83
+31 May 2019,IUMZICR,1.81
+30 Jun 2019,IUMZICR,1.8
+31 Jul 2019,IUMZICR,1.8
+31 Aug 2019,IUMZICR,1.79
+30 Sep 2019,IUMZICR,1.76
+31 Oct 2019,IUMZICR,1.73
+30 Nov 2019,IUMZICR,1.71
+31 Dec 2019,IUMZICR,1.7
+31 Jan 2020,IUMZICR,1.69
+29 Feb 2020,IUMZICR,1.69
+31 Mar 2020,IUMZICR,1.69
+30 Apr 2020,IUMZICR,1.64
+31 May 2020,IUMZICR,1.76
+30 Jun 2020,IUMZICR,1.84
+31 Jul 2020,IUMZICR,2.01
+31 Aug 2020,IUMZICR,2.27
+30 Sep 2020,IUMZICR,2.55
+31 Oct 2020,IUMZICR,3
+30 Nov 2020,IUMZICR,3.06
+31 Dec 2020,IUMZICR,3.02
+31 Jan 2021,IUMZICR,2.91
+28 Feb 2021,IUMZICR,2.73
+31 Mar 2021,IUMZICR,2.65
+30 Apr 2021,IUMZICR,2.56
+31 May 2021,IUMZICR,2.51
+30 Jun 2021,IUMZICR,2.37
+31 Jul 2021,IUMZICR,2.16
+31 Aug 2021,IUMZICR,1.99
+30 Sep 2021,IUMZICR,1.8
+31 Oct 2021,IUMZICR,1.68
+30 Nov 2021,IUMZICR,1.74
+31 Dec 2021,IUMZICR,1.71
+31 Jan 2022,IUMZICR,1.74
+28 Feb 2022,IUMZICR,1.87
+31 Mar 2022,IUMZICR,2.22
+30 Apr 2022,IUMZICR,2.46
+31 May 2022,IUMZICR,2.72
+30 Jun 2022,IUMZICR,2.95
+31 Jul 2022,IUMZICR,3.48
+31 Aug 2022,IUMZICR,3.69
+30 Sep 2022,IUMZICR,4.37
+31 Oct 2022,IUMZICR,6.17
+30 Nov 2022,IUMZICR,6.11
+31 Dec 2022,IUMZICR,5.57
+31 Jan 2023,IUMZICR,5.26
+28 Feb 2023,IUMZICR,5.03
+31 Mar 2023,IUMZICR,4.98
+30 Apr 2023,IUMZICR,4.88
+31 May 2023,IUMZICR,4.92
+30 Jun 2023,IUMZICR,5.59
+31 Jul 2023,IUMZICR,6.35
+31 Aug 2023,IUMZICR,6.35
+30 Sep 2023,IUMZICR,6.14
+31 Oct 2023,IUMZICR,5.94
+30 Nov 2023,IUMZICR,5.65
+31 Dec 2023,IUMZICR,5.38
+31 Jan 2024,IUMZICR,5.04
+29 Feb 2024,IUMZICR,4.99
+31 Mar 2024,IUMZICR,5.16
+30 Apr 2024,IUMZICR,5.16
+31 May 2024,IUMZICR,5.32
+30 Jun 2024,IUMZICR,5.3
+31 Jul 2024,IUMZICR,5.21
+31 Aug 2024,IUMZICR,5.07
+30 Sep 2024,IUMZICR,4.86
+31 Oct 2024,IUMZICR,4.76
+30 Nov 2024,IUMZICR,4.87
+31 Dec 2024,IUMZICR,4.88
+31 Jan 2025,IUMZICR,4.92
+30 Sep 2017,IUMB482,2.31
+31 Oct 2017,IUMB482,2.36
+30 Nov 2017,IUMB482,2.36
+31 Dec 2017,IUMB482,2.21
+31 Jan 2018,IUMB482,2.17
+28 Feb 2018,IUMB482,2.21
+31 Mar 2018,IUMB482,2.2
+30 Apr 2018,IUMB482,2.36
+31 May 2018,IUMB482,2.34
+30 Jun 2018,IUMB482,2.37
+31 Jul 2018,IUMB482,2.3
+31 Aug 2018,IUMB482,2.28
+30 Sep 2018,IUMB482,2.12
+31 Oct 2018,IUMB482,2.27
+30 Nov 2018,IUMB482,2.28
+31 Dec 2018,IUMB482,2.24
+31 Jan 2019,IUMB482,2.23
+28 Feb 2019,IUMB482,2.17
+31 Mar 2019,IUMB482,2.17
+30 Apr 2019,IUMB482,2.15
+31 May 2019,IUMB482,2.19
+30 Jun 2019,IUMB482,2.18
+31 Jul 2019,IUMB482,2.15
+31 Aug 2019,IUMB482,2.1
+30 Sep 2019,IUMB482,2.09
+31 Oct 2019,IUMB482,2.07
+30 Nov 2019,IUMB482,2.08
+31 Dec 2019,IUMB482,2.07
+31 Jan 2020,IUMB482,2.05
+29 Feb 2020,IUMB482,1.97
+31 Mar 2020,IUMB482,1.94
+30 Apr 2020,IUMB482,1.89
+31 May 2020,IUMB482,1.96
+30 Jun 2020,IUMB482,2.19
+31 Jul 2020,IUMB482,2.5
+31 Aug 2020,IUMB482,2.78
+30 Sep 2020,IUMB482,3.29
+31 Oct 2020,IUMB482,3.52
+30 Nov 2020,IUMB482,3.72
+31 Dec 2020,IUMB482,3.75
+31 Jan 2021,IUMB482,3.63
+28 Feb 2021,IUMB482,3.49
+31 Mar 2021,IUMB482,3.38
+30 Apr 2021,IUMB482,3.38
+31 May 2021,IUMB482,3.31
+30 Jun 2021,IUMB482,3.09
+31 Jul 2021,IUMB482,2.79
+31 Aug 2021,IUMB482,2.48
+30 Sep 2021,IUMB482,2.16
+31 Oct 2021,IUMB482,2.04
+30 Nov 2021,IUMB482,2.02
+31 Dec 2021,IUMB482,1.95
+31 Jan 2022,IUMB482,1.95
+28 Feb 2022,IUMB482,2.03
+31 Mar 2022,IUMB482,2.38
+30 Apr 2022,IUMB482,2.58
+31 May 2022,IUMB482,2.85
+30 Jun 2022,IUMB482,3.15
+31 Jul 2022,IUMB482,3.69
+31 Aug 2022,IUMB482,3.93
+30 Sep 2022,IUMB482,4.48
+31 Oct 2022,IUMB482,6.2
+30 Nov 2022,IUMB482,6.28
+31 Dec 2022,IUMB482,6
+31 Jan 2023,IUMB482,5.66
+28 Feb 2023,IUMB482,5.35
+31 Mar 2023,IUMB482,5.23
+30 Apr 2023,IUMB482,5.07
+31 May 2023,IUMB482,5.08
+30 Jun 2023,IUMB482,5.75
+31 Jul 2023,IUMB482,6.49
+31 Aug 2023,IUMB482,6.57
+30 Sep 2023,IUMB482,6.37
+31 Oct 2023,IUMB482,6.06
+30 Nov 2023,IUMB482,5.81
+31 Dec 2023,IUMB482,5.69
+31 Jan 2024,IUMB482,5.44
+29 Feb 2024,IUMB482,5.26
+31 Mar 2024,IUMB482,5.39
+30 Apr 2024,IUMB482,5.47
+31 May 2024,IUMB482,5.66
+30 Jun 2024,IUMB482,5.65
+31 Jul 2024,IUMB482,5.61
+31 Aug 2024,IUMB482,5.54
+30 Sep 2024,IUMB482,5.4
+31 Oct 2024,IUMB482,5.3
+30 Nov 2024,IUMB482,5.41
+31 Dec 2024,IUMB482,5.36
+31 Jan 2025,IUMB482,5.35
+30 Sep 2017,IUM2WTL,4.01
+31 Oct 2017,IUM2WTL,4.02
+30 Nov 2017,IUM2WTL,3.97
+31 Dec 2017,IUM2WTL,3.89
+31 Jan 2018,IUM2WTL,3.82
+28 Feb 2018,IUM2WTL,3.82
+31 Mar 2018,IUM2WTL,3.77
+30 Apr 2018,IUM2WTL,3.9
+31 May 2018,IUM2WTL,3.95
+30 Jun 2018,IUM2WTL,3.95
+31 Jul 2018,IUM2WTL,3.78
+31 Aug 2018,IUM2WTL,3.61
+30 Sep 2018,IUM2WTL,3.38
+31 Oct 2018,IUM2WTL,3.33
+30 Nov 2018,IUM2WTL,3.23
+31 Dec 2018,IUM2WTL,3.18
+31 Jan 2019,IUM2WTL,3.04
+28 Feb 2019,IUM2WTL,2.99
+31 Mar 2019,IUM2WTL,2.97
+30 Apr 2019,IUM2WTL,2.92
+31 May 2019,IUM2WTL,2.93
+30 Jun 2019,IUM2WTL,2.95
+31 Jul 2019,IUM2WTL,2.96
+31 Aug 2019,IUM2WTL,2.96
+30 Sep 2019,IUM2WTL,2.99
+31 Oct 2019,IUM2WTL,2.99
+30 Nov 2019,IUM2WTL,2.99
+31 Dec 2019,IUM2WTL,3
+31 Jan 2020,IUM2WTL,3.02
+29 Feb 2020,IUM2WTL,3.02
+31 Mar 2020,IUM2WTL,3.02
+30 Apr 2020,IUM2WTL,3.07
+31 May 2020,IUM2WTL,3.17
+30 Jun 2020,IUM2WTL,2.72
+31 Jul 2020,IUM2WTL,2.58
+31 Aug 2020,IUM2WTL,3.78
+30 Sep 2020,IUM2WTL,3.95
+31 Oct 2020,IUM2WTL,4.13
+30 Nov 2020,IUM2WTL,4.2
+31 Dec 2020,IUM2WTL,4.2
+31 Jan 2021,IUM2WTL,4.16
+28 Feb 2021,IUM2WTL,4.1
+31 Mar 2021,IUM2WTL,4.16
+30 Apr 2021,IUM2WTL,4.01
+31 May 2021,IUM2WTL,3.88
+30 Jun 2021,IUM2WTL,3.74
+31 Jul 2021,IUM2WTL,3.53
+31 Aug 2021,IUM2WTL,3.43
+30 Sep 2021,IUM2WTL,3.22
+31 Oct 2021,IUM2WTL,2.98
+30 Nov 2021,IUM2WTL,2.91
+31 Dec 2021,IUM2WTL,2.77
+31 Jan 2022,IUM2WTL,2.73
+28 Feb 2022,IUM2WTL,2.72
+31 Mar 2022,IUM2WTL,2.8
+30 Apr 2022,IUM2WTL,2.95
+31 May 2022,IUM2WTL,3.2
+30 Jun 2022,IUM2WTL,3.48
+31 Jul 2022,IUM2WTL,3.96
+31 Aug 2022,IUM2WTL,4.14
+30 Sep 2022,IUM2WTL,4.67
+31 Oct 2022,IUM2WTL,6.42
+30 Nov 2022,IUM2WTL,6.59
+31 Dec 2022,IUM2WTL,6.3
+31 Jan 2023,IUM2WTL,6.02
+28 Feb 2023,IUM2WTL,5.86
+31 Mar 2023,IUM2WTL,5.77
+30 Apr 2023,IUM2WTL,5.65
+31 May 2023,IUM2WTL,5.67
+30 Jun 2023,IUM2WTL,6.28
+31 Jul 2023,IUM2WTL,6.88
+31 Aug 2023,IUM2WTL,6.93
+30 Sep 2023,IUM2WTL,6.75
+31 Oct 2023,IUM2WTL,6.6
+30 Nov 2023,IUM2WTL,6.38
+31 Dec 2023,IUM2WTL,6.18
+31 Jan 2024,IUM2WTL,5.87
+29 Feb 2024,IUM2WTL,5.73
+31 Mar 2024,IUM2WTL,5.83
+30 Apr 2024,IUM2WTL,5.87
+31 May 2024,IUM2WTL,6.04
+30 Jun 2024,IUM2WTL,6.07
+31 Jul 2024,IUM2WTL,5.97
+31 Aug 2024,IUM2WTL,5.9
+30 Sep 2024,IUM2WTL,5.76
+31 Oct 2024,IUM2WTL,5.61
+30 Nov 2024,IUM2WTL,5.68
+31 Dec 2024,IUM2WTL,5.69
+31 Jan 2025,IUM2WTL,5.69
+30 Sep 2017,IUM5WTL,4.68
+31 Oct 2017,IUM5WTL,4.71
+30 Nov 2017,IUM5WTL,4.58
+31 Dec 2017,IUM5WTL,4.54
+31 Jan 2018,IUM5WTL,4.49
+28 Feb 2018,IUM5WTL,4.5
+31 Mar 2018,IUM5WTL,4.44
+30 Apr 2018,IUM5WTL,4.37
+31 May 2018,IUM5WTL,4.43
+30 Jun 2018,IUM5WTL,4.39
+31 Jul 2018,IUM5WTL,4.29
+31 Aug 2018,IUM5WTL,4.15
+30 Sep 2018,IUM5WTL,3.94
+31 Oct 2018,IUM5WTL,3.88
+30 Nov 2018,IUM5WTL,3.81
+31 Dec 2018,IUM5WTL,3.72
+31 Jan 2019,IUM5WTL,3.64
+28 Feb 2019,IUM5WTL,3.6
+31 Mar 2019,IUM5WTL,3.57
+30 Apr 2019,IUM5WTL,3.46
+31 May 2019,IUM5WTL,3.46
+30 Jun 2019,IUM5WTL,3.44
+31 Jul 2019,IUM5WTL,3.39
+31 Aug 2019,IUM5WTL,3.39
+30 Sep 2019,IUM5WTL,3.37
+31 Oct 2019,IUM5WTL,3.38
+30 Nov 2019,IUM5WTL,3.37
+31 Dec 2019,IUM5WTL,3.37
+31 Jan 2020,IUM5WTL,3.34
+29 Feb 2020,IUM5WTL,3.28
+31 Mar 2020,IUM5WTL,3.29
+30 Apr 2020,IUM5WTL,3.39
+31 May 2020,IUM5WTL,3.49
+30 Jun 2020,IUM5WTL,3.77
+31 Jul 2020,IUM5WTL,4.04
+31 Aug 2020,IUM5WTL,4.07
+30 Sep 2020,IUM5WTL,4.23
+31 Oct 2020,IUM5WTL,4.21
+30 Nov 2020,IUM5WTL,4.37
+31 Dec 2020,IUM5WTL,4.37
+31 Jan 2021,IUM5WTL,4.41
+28 Feb 2021,IUM5WTL,4.41
+31 Mar 2021,IUM5WTL,4.3
+30 Apr 2021,IUM5WTL,4.11
+31 May 2021,IUM5WTL,4.02
+30 Jun 2021,IUM5WTL,3.91
+31 Jul 2021,IUM5WTL,3.77
+31 Aug 2021,IUM5WTL,3.63
+30 Sep 2021,IUM5WTL,3.46
+31 Oct 2021,IUM5WTL,3.28
+30 Nov 2021,IUM5WTL,3.2
+31 Dec 2021,IUM5WTL,3.11
+31 Jan 2022,IUM5WTL,3.07
+28 Feb 2022,IUM5WTL,3.05
+31 Mar 2022,IUM5WTL,3.08
+30 Apr 2022,IUM5WTL,3.11
+31 May 2022,IUM5WTL,3.26
+30 Jun 2022,IUM5WTL,3.51
+31 Jul 2022,IUM5WTL,4
+31 Aug 2022,IUM5WTL,4.17
+30 Sep 2022,IUM5WTL,4.54
+31 Oct 2022,IUM5WTL,6.12
+30 Nov 2022,IUM5WTL,6.2
+31 Dec 2022,IUM5WTL,5.87
+31 Jan 2023,IUM5WTL,5.56
+28 Feb 2023,IUM5WTL,5.31
+31 Mar 2023,IUM5WTL,5.19
+30 Apr 2023,IUM5WTL,5.08
+31 May 2023,IUM5WTL,5.15
+30 Jun 2023,IUM5WTL,5.7
+31 Jul 2023,IUM5WTL,6.26
+31 Aug 2023,IUM5WTL,6.27
+30 Sep 2023,IUM5WTL,6.01
+31 Oct 2023,IUM5WTL,5.87
+30 Nov 2023,IUM5WTL,5.71
+31 Dec 2023,IUM5WTL,5.52
+31 Jan 2024,IUM5WTL,5.24
+29 Feb 2024,IUM5WTL,5.16
+31 Mar 2024,IUM5WTL,5.3
+30 Apr 2024,IUM5WTL,5.34
+31 May 2024,IUM5WTL,5.48
+30 Jun 2024,IUM5WTL,5.47
+31 Jul 2024,IUM5WTL,5.43
+31 Aug 2024,IUM5WTL,5.33
+30 Sep 2024,IUM5WTL,5.23
+31 Oct 2024,IUM5WTL,5.13
+30 Nov 2024,IUM5WTL,5.23
+31 Dec 2024,IUM5WTL,5.24
+31 Jan 2025,IUM5WTL,5.26
+28 Feb 2019,IUMZO28,2.56
+31 Mar 2019,IUMZO28,2.56
+30 Apr 2019,IUMZO28,2.54
+31 May 2019,IUMZO28,2.54
+30 Jun 2019,IUMZO28,2.53
+31 Jul 2019,IUMZO28,2.54
+31 Aug 2019,IUMZO28,2.5
+30 Sep 2019,IUMZO28,2.5
+31 Oct 2019,IUMZO28,2.49
+30 Nov 2019,IUMZO28,2.5
+31 Dec 2019,IUMZO28,2.49
+31 Jan 2020,IUMZO28,2.49
+29 Feb 2020,IUMZO28,2.49
+31 Mar 2020,IUMZO28,2.48
+30 Apr 2020,IUMZO28,2.39
+31 May 2020,IUMZO28,2.33
+30 Jun 2020,IUMZO28,2.5
+31 Jul 2020,IUMZO28,2.86
+31 Aug 2020,IUMZO28,3.02
+30 Sep 2020,IUMZO28,3.95
+31 Oct 2020,IUMZO28,4.16
+30 Nov 2020,IUMZO28,4.07
+31 Dec 2020,IUMZO28,3.8
+31 Jan 2021,IUMZO28,3.65
+28 Feb 2021,IUMZO28,3.51
+31 Mar 2021,IUMZO28,3.45
+30 Apr 2021,IUMZO28,3.45
+31 May 2021,IUMZO28,3.43
+30 Jun 2021,IUMZO28,3.36
+31 Jul 2021,IUMZO28,3.2
+31 Aug 2021,IUMZO28,2.96
+30 Sep 2021,IUMZO28,2.74
+31 Oct 2021,IUMZO28,2.62
+30 Nov 2021,IUMZO28,2.58
+31 Dec 2021,IUMZO28,2.47
+31 Jan 2022,IUMZO28,2.41
+28 Feb 2022,IUMZO28,2.42
+31 Mar 2022,IUMZO28,2.56
+30 Apr 2022,IUMZO28,2.67
+31 May 2022,IUMZO28,2.86
+30 Jun 2022,IUMZO28,3.18
+31 Jul 2022,IUMZO28,3.66
+31 Aug 2022,IUMZO28,3.8
+30 Sep 2022,IUMZO28,4.16
+31 Oct 2022,IUMZO28,5.8
+30 Nov 2022,IUMZO28,5.84
+31 Dec 2022,IUMZO28,5.41
+31 Jan 2023,IUMZO28,5.06
+28 Feb 2023,IUMZO28,4.73
+31 Mar 2023,IUMZO28,4.66
+30 Apr 2023,IUMZO28,4.57
+31 May 2023,IUMZO28,4.62
+30 Jun 2023,IUMZO28,5.2
+31 Jul 2023,IUMZO28,5.87
+31 Aug 2023,IUMZO28,5.82
+30 Sep 2023,IUMZO28,5.62
+31 Oct 2023,IUMZO28,5.38
+30 Nov 2023,IUMZO28,5.18
+31 Dec 2023,IUMZO28,5.01
+31 Jan 2024,IUMZO28,4.84
+29 Feb 2024,IUMZO28,4.7
+31 Mar 2024,IUMZO28,4.85
+30 Apr 2024,IUMZO28,4.91
+31 May 2024,IUMZO28,5.07
+30 Jun 2024,IUMZO28,5.07
+31 Jul 2024,IUMZO28,5.01
+31 Aug 2024,IUMZO28,4.88
+30 Sep 2024,IUMZO28,4.73
+31 Oct 2024,IUMZO28,4.69
+30 Nov 2024,IUMZO28,4.8
+31 Dec 2024,IUMZO28,4.81
+31 Jan 2025,IUMZO28,4.82
+30 Sep 2017,IUMBV42,1.9
+31 Oct 2017,IUMBV42,2.04
+30 Nov 2017,IUMBV42,2.04
+31 Dec 2017,IUMBV42,2.07
+31 Jan 2018,IUMBV42,1.98
+28 Feb 2018,IUMBV42,1.99
+31 Mar 2018,IUMBV42,2.02
+30 Apr 2018,IUMBV42,2.01
+31 May 2018,IUMBV42,2.06
+30 Jun 2018,IUMBV42,2.03
+31 Jul 2018,IUMBV42,2.04
+31 Aug 2018,IUMBV42,2.03
+30 Sep 2018,IUMBV42,2.01
+31 Oct 2018,IUMBV42,2.06
+30 Nov 2018,IUMBV42,2.02
+31 Dec 2018,IUMBV42,2.01
+31 Jan 2019,IUMBV42,2.05
+28 Feb 2019,IUMBV42,2.05
+31 Mar 2019,IUMBV42,2.03
+30 Apr 2019,IUMBV42,2
+31 May 2019,IUMBV42,1.99
+30 Jun 2019,IUMBV42,1.97
+31 Jul 2019,IUMBV42,1.93
+31 Aug 2019,IUMBV42,1.89
+30 Sep 2019,IUMBV42,1.79
+31 Oct 2019,IUMBV42,1.71
+30 Nov 2019,IUMBV42,1.67
+31 Dec 2019,IUMBV42,1.67
+31 Jan 2020,IUMBV42,1.68
+29 Feb 2020,IUMBV42,1.67
+31 Mar 2020,IUMBV42,1.66
+30 Apr 2020,IUMBV42,1.67
+31 May 2020,IUMBV42,1.7
+30 Jun 2020,IUMBV42,1.69
+31 Jul 2020,IUMBV42,1.7
+31 Aug 2020,IUMBV42,1.79
+30 Sep 2020,IUMBV42,1.92
+31 Oct 2020,IUMBV42,2.05
+30 Nov 2020,IUMBV42,2.05
+31 Dec 2020,IUMBV42,2
+31 Jan 2021,IUMBV42,1.92
+28 Feb 2021,IUMBV42,1.8
+31 Mar 2021,IUMBV42,1.74
+30 Apr 2021,IUMBV42,1.71
+31 May 2021,IUMBV42,1.68
+30 Jun 2021,IUMBV42,1.6
+31 Jul 2021,IUMBV42,1.45
+31 Aug 2021,IUMBV42,1.39
+30 Sep 2021,IUMBV42,1.28
+31 Oct 2021,IUMBV42,1.3
+30 Nov 2021,IUMBV42,1.52
+31 Dec 2021,IUMBV42,1.59
+31 Jan 2022,IUMBV42,1.63
+28 Feb 2022,IUMBV42,1.79
+31 Mar 2022,IUMBV42,2.11
+30 Apr 2022,IUMBV42,2.35
+31 May 2022,IUMBV42,2.62
+30 Jun 2022,IUMBV42,2.9
+31 Jul 2022,IUMBV42,3.43
+31 Aug 2022,IUMBV42,3.61
+30 Sep 2022,IUMBV42,3.97
+31 Oct 2022,IUMBV42,5.61
+30 Nov 2022,IUMBV42,5.5
+31 Dec 2022,IUMBV42,5.05
+31 Jan 2023,IUMBV42,4.66
+28 Feb 2023,IUMBV42,4.36
+31 Mar 2023,IUMBV42,4.26
+30 Apr 2023,IUMBV42,4.16
+31 May 2023,IUMBV42,4.28
+30 Jun 2023,IUMBV42,4.95
+31 Jul 2023,IUMBV42,5.71
+31 Aug 2023,IUMBV42,5.53
+30 Sep 2023,IUMBV42,5.24
+31 Oct 2023,IUMBV42,5.02
+30 Nov 2023,IUMBV42,4.89
+31 Dec 2023,IUMBV42,4.68
+31 Jan 2024,IUMBV42,4.43
+29 Feb 2024,IUMBV42,4.41
+31 Mar 2024,IUMBV42,4.53
+30 Apr 2024,IUMBV42,4.51
+31 May 2024,IUMBV42,4.66
+30 Jun 2024,IUMBV42,4.64
+31 Jul 2024,IUMBV42,4.49
+31 Aug 2024,IUMBV42,4.33
+30 Sep 2024,IUMBV42,4.09
+31 Oct 2024,IUMBV42,4.07
+30 Nov 2024,IUMBV42,4.31
+31 Dec 2024,IUMBV42,4.38
+31 Jan 2025,IUMBV42,4.39
+28 Feb 2019,IUMZO27,1.96
+31 Mar 2019,IUMZO27,1.95
+30 Apr 2019,IUMZO27,1.92
+31 May 2019,IUMZO27,1.93
+30 Jun 2019,IUMZO27,1.93
+31 Jul 2019,IUMZO27,1.88
+31 Aug 2019,IUMZO27,1.82
+30 Sep 2019,IUMZO27,1.75
+31 Oct 2019,IUMZO27,1.69
+30 Nov 2019,IUMZO27,1.63
+31 Dec 2019,IUMZO27,1.61
+31 Jan 2020,IUMZO27,1.61
+29 Feb 2020,IUMZO27,1.59
+31 Mar 2020,IUMZO27,1.57
+30 Apr 2020,IUMZO27,1.57
+31 May 2020,IUMZO27,1.56
+30 Jun 2020,IUMZO27,1.55
+31 Jul 2020,IUMZO27,1.57
+31 Aug 2020,IUMZO27,1.62
+30 Sep 2020,IUMZO27,1.71
+31 Oct 2020,IUMZO27,1.71
+30 Nov 2020,IUMZO27,1.62
+31 Dec 2020,IUMZO27,1.57
+31 Jan 2021,IUMZO27,1.52
+28 Feb 2021,IUMZO27,1.46
+31 Mar 2021,IUMZO27,1.44
+30 Apr 2021,IUMZO27,1.41
+31 May 2021,IUMZO27,1.35
+30 Jun 2021,IUMZO27,1.3
+31 Jul 2021,IUMZO27,1.25
+31 Aug 2021,IUMZO27,1.17
+30 Sep 2021,IUMZO27,1.11
+31 Oct 2021,IUMZO27,1.14
+30 Nov 2021,IUMZO27,1.39
+31 Dec 2021,IUMZO27,1.5
+31 Jan 2022,IUMZO27,1.54
+28 Feb 2022,IUMZO27,1.74
+31 Mar 2022,IUMZO27,2.03
+30 Apr 2022,IUMZO27,2.29
+31 May 2022,IUMZO27,2.54
+30 Jun 2022,IUMZO27,2.87
+31 Jul 2022,IUMZO27,3.32
+31 Aug 2022,IUMZO27,3.49
+30 Sep 2022,IUMZO27,3.87
+31 Oct 2022,IUMZO27,5.52
+30 Nov 2022,IUMZO27,5.5
+31 Dec 2022,IUMZO27,4.98
+31 Jan 2023,IUMZO27,4.62
+28 Feb 2023,IUMZO27,4.34
+31 Mar 2023,IUMZO27,4.22
+30 Apr 2023,IUMZO27,4.11
+31 May 2023,IUMZO27,4.23
+30 Jun 2023,IUMZO27,4.93
+31 Jul 2023,IUMZO27,5.74
+31 Aug 2023,IUMZO27,5.55
+30 Sep 2023,IUMZO27,5.27
+31 Oct 2023,IUMZO27,5.03
+30 Nov 2023,IUMZO27,4.85
+31 Dec 2023,IUMZO27,4.62
+31 Jan 2024,IUMZO27,4.35
+29 Feb 2024,IUMZO27,4.27
+31 Mar 2024,IUMZO27,4.43
+30 Apr 2024,IUMZO27,4.38
+31 May 2024,IUMZO27,4.54
+30 Jun 2024,IUMZO27,4.5
+31 Jul 2024,IUMZO27,4.32
+31 Aug 2024,IUMZO27,4.1
+30 Sep 2024,IUMZO27,3.93
+31 Oct 2024,IUMZO27,3.94
+30 Nov 2024,IUMZO27,4.18
+31 Dec 2024,IUMZO27,4.23
+31 Jan 2025,IUMZO27,4.22
