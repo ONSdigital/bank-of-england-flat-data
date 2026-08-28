@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup deno
-        uses: denoland/setup-deno@main
+        uses: denoland/setup-deno@22d081ff2d3a40755e97629de92e3bcbfa7cf2ed # main
         with:
           deno-version: v1.10.x
       - name: Check out repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@0717577d45739eb3c851188b29f50ed6c0b2194e # v2
       - name: Fetch data
-        uses: githubocto/flat@v3
+        uses: githubocto/flat@fc34373cc20b987e89d75d96435a9fecd8fb0807 # v3
         with:
           http_url: https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshowcolumns.asp?csv.x=yes&Datefrom=01/Sep/2017&Dateto=now&SeriesCodes=IUMZICQ,IUMBV34,IUMZICR,IUMB482,IUM2WTL,IUM5WTL,IUMZO28,IUMBV42,IUMZO27&CSVF=CN&UsingCodes=Y&VPD=N&VFD=N 
           downloaded_filename: boe.csv
